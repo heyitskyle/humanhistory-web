@@ -1,8 +1,4 @@
-# humanhistory-web
-Repository for "PRIDE! A Human History" web project.
-
-
-## Welcome!
+# PRIDE! A Human History
 
 PRIDE! A Human History is a web-based educational tool designed to bridge the education gaps in LGBTQ+ history. Conceived from personal experience, the site explores the often overlooked aspects of queer history. It showcases the milestones, figures, and cultural achievements of the LGBTQ+ community. The projects touches on the joys of queer history as opposed to the often portrayed images of struggle and suffering.
 
