@@ -1,0 +1,74 @@
+body {
+  background-color: black;
+  font-family: "Lora", serif;
+  color: rgb(163, 163, 163);
+}
+
+.text-lt-blue {
+  color: #70E2FF;
+}
+.text-lt-orange {
+  color: #FFA647;
+}
+.text-pink {
+  color: #FF75C3;
+}
+.text-yellow {
+  color: #FFE83F;
+}
+
+.header-bg {
+  background-image: url("../resources/header.jpg");
+  height: 700px;
+  background-repeat: no-repeat;
+  z-index: -5;
+}
+
+.header-h1 {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to right, #FF75C3, #FFA647, #FFE83F, #9FFF5B, #70E2FF, #CD93FF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "interstate", sans-serif;
+  font-weight: 800;
+}
+
+.header-h2 {
+  color: white;
+  z-index: 10;
+  text-shadow: 0 0 12px rgb(0, 0, 0);
+  font-family: "Lora", serif;
+  font-weight: 500;
+}
+
+.time--container {
+  font-family: "interstate", sans-serif;
+  font-weight: 700;
+}
+
+.timeevent-img {
+  max-width: 66.66;
+  min-width: 66.66%;
+}
+
+.eventmodal {
+  z-index: 1000;
+}
+.eventmodal-card {
+  max-height: 90%;
+}
+
+footer {
+  font-family: "interstate", sans-serif;
+}
+
+.event-h3 {
+  font-family: "interstate", sans-serif;
+  font-weight: 800;
+}
+.event--expand, .event--source {
+  font-family: "interstate", sans-serif;
+  font-weight: 700;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,106 @@
+$ff-interstate: "interstate", sans-serif;
+$ff-lora: "Lora", serif;
+
+$fw-500: 500;
+$fw-700: 700;
+$fw-800: 800;
+
+$color-lt-blue: #70E2FF;
+$color-lt-orange: #FFA647;
+$color-yellow: #FFE83F;
+$color-pink: #FF75C3;
+
+$header-gradient-colors: (
+  0%: #FF75C3, // Pastel Pink
+  20%: #FFA647, // Pastel Orange
+  40%: #FFE83F, // Pastel Yellow
+  60%: #9FFF5B, // Pastel Green
+  80%: #70E2FF, // Pastel Blue
+  100%: #CD93FF // Pastel Purple
+);
+
+body {
+  background-color: black;
+  font-family: $ff-lora;
+  color: rgb(163, 163, 163);
+}
+
+.text {
+  &-lt {
+    &-blue {
+      color: $color-lt-blue;
+    }
+    &-orange {
+      color: $color-lt-orange;
+    }
+  }
+  &-pink {
+    color: $color-pink;
+  }
+  &-yellow {
+    color: $color-yellow;
+  }
+}
+
+
+.header-bg {
+  background-image: url('../resources/header.jpg');
+  height: 700px;
+  background-repeat: no-repeat;
+  z-index: -5;
+}
+  
+.header-h1 {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to right, map-get($header-gradient-colors, 0%), map-get($header-gradient-colors, 20%), map-get($header-gradient-colors, 40%), map-get($header-gradient-colors, 60%), map-get($header-gradient-colors, 80%), map-get($header-gradient-colors, 100%));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: $ff-interstate;
+  font-weight: $fw-800;
+}
+
+.header-h2 {
+  color: white;
+  z-index: 10;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 1);
+  font-family: $ff-lora;
+  font-weight: $fw-500;
+}
+
+.time {
+   &--container {
+    font-family: $ff-interstate;
+    font-weight: $fw-700;
+   }
+}
+
+.timeevent {
+  &-img {
+    max-width: 66.66;
+    min-width: 66.66%;
+  }
+}
+
+.eventmodal {
+  z-index: 1000;
+  &-card {
+    max-height: 90%;
+  }
+}
+
+footer {
+  font-family: $ff-interstate;
+}
+
+.event {
+  &-h3 {
+    font-family: $ff-interstate;
+    font-weight: $fw-800;
+  }
+  &--expand, &--source {
+    font-family: $ff-interstate;
+    font-weight: $fw-700;
+  }
+}
